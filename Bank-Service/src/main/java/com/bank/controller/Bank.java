@@ -24,7 +24,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import com.bank.service.Bankservice;
 
 /**
- * @author Ramesh chatty
+ * 
  *
  */
 @RestController
@@ -53,7 +53,7 @@ public class Bank {
 	        System.out.println(file.getContentType());
 	        System.out.println("some param = "+param);
 	        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8));
-	        // read file
+	        // read filedfhdsjkghdkj
 	        FileUtils.writeByteArrayToFile(new File("C:\\Users\\Rakesh Chatty\\Desktop\\temp."+FilenameUtils.getExtension(file.getOriginalFilename())), file.getBytes());
 	    }
 	    catch(Exception ex){
